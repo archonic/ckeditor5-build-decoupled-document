@@ -27,6 +27,9 @@ module.exports = {
 		'@ckeditor/ckeditor5-basic-styles/src/strikethrough',
 		'@ckeditor/ckeditor5-basic-styles/src/underline',
 		'@ckeditor/ckeditor5-block-quote/src/blockquote',
+		'@ckeditor/ckeditor5-collaboration/src/collaborativeediting',
+		'@ckeditor/ckeditor5-collaboration/src/presencelist',
+		'@ckeditor/ckeditor5-collaboration/src/collaborativecomments',
 		'@ckeditor/ckeditor5-easy-image/src/easyimage',
 		'@ckeditor/ckeditor5-heading/src/heading',
 		'@ckeditor/ckeditor5-image/src/image',
@@ -64,7 +67,9 @@ module.exports = {
 				'imageUpload',
 				'|',
 				'undo',
-				'redo'
+				'redo',
+				'|',
+				'comment'
 			]
 		},
 
@@ -74,7 +79,7 @@ module.exports = {
 				'alignLeft',
 				'alignRight'
 			],
-			toolbar: [ 'imageStyle:alignLeft', 'imageStyle:full', 'imageStyle:alignRight', '|', 'imageTextAlternative' ]
+			toolbar: [ 'imageStyle:alignLeft', 'imageStyle:full', 'imageStyle:alignRight', '|', 'imageTextAlternative', '|', 'comment' ]
 		},
 
 		// UI language. Language codes follow the https://en.wikipedia.org/wiki/ISO_639-1 format.

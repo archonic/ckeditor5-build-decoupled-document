@@ -16,6 +16,9 @@ import ItalicPlugin from '@ckeditor/ckeditor5-basic-styles/src/italic';
 import StrikethroughPlugin from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
 import UnderlinePlugin from '@ckeditor/ckeditor5-basic-styles/src/underline';
 import BlockquotePlugin from '@ckeditor/ckeditor5-block-quote/src/blockquote';
+import CollaborativeeditingPlugin from '@ckeditor/ckeditor5-collaboration/src/collaborativeediting';
+import PresencelistPlugin from '@ckeditor/ckeditor5-collaboration/src/presencelist';
+import CollaborativecommentsPlugin from '@ckeditor/ckeditor5-collaboration/src/collaborativecomments';
 import EasyimagePlugin from '@ckeditor/ckeditor5-easy-image/src/easyimage';
 import HeadingPlugin from '@ckeditor/ckeditor5-heading/src/heading';
 import ImagePlugin from '@ckeditor/ckeditor5-image/src/image';
@@ -43,6 +46,9 @@ DecoupledEditor.build = {
 		StrikethroughPlugin,
 		UnderlinePlugin,
 		BlockquotePlugin,
+		CollaborativeeditingPlugin,
+		PresencelistPlugin,
+		CollaborativecommentsPlugin,
 		EasyimagePlugin,
 		HeadingPlugin,
 		ImagePlugin,
@@ -78,7 +84,9 @@ DecoupledEditor.build = {
 				'imageUpload',
 				'|',
 				'undo',
-				'redo'
+				'redo',
+				'|',
+				'comment'
 			]
 		},
 		image: {
@@ -92,7 +100,9 @@ DecoupledEditor.build = {
 				'imageStyle:full',
 				'imageStyle:alignRight',
 				'|',
-				'imageTextAlternative'
+				'imageTextAlternative',
+				'|',
+				'comment'
 			]
 		},
 		language: 'en'
